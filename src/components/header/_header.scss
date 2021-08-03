@@ -1,0 +1,116 @@
+.header{
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+    color: white;
+    background-color: rgba(33, 33, 33, 0.98);
+    .header_container{
+        padding: 10px 20px;
+        justify-content: space-between;
+        display: flex;
+        .left_menu{
+            display: flex;
+            align-items: center;
+            .MuiSvgIcon-root{
+                margin-right: 20px;
+                @media screen and (max-width:540px){
+                    margin-right: 2vw;     
+                }
+            }
+        }
+        .middlemenu{
+            display: flex;
+            width: 50%;
+            align-items: center;
+            svg{
+                margin-left: 20px;
+            }
+            .searchbar{
+                width: 100%;
+                input{
+                    width: 100%;
+                    font-size: 16px;
+                    padding: 1px 10px;
+                    background-color: hsl(0, 0%, 7%);
+                    border-color:  hsl(0, 0%, 7%);
+                    outline: none;
+                    color: hsla(0, 100%, 100%, 0.88) !important;
+                    @media screen and (max-width:540px){
+                        font-size: 16px;
+                        background-color: transparent;
+                        border-color: #121212;
+                        outline: none;
+                        border: none;
+                        border-bottom: 0.2px solid gray;
+                    }
+                }
+            }
+            .searchbutton{
+                padding: 0.4vw 1.2vw;
+                display: flex;
+                align-items: center;
+                background-color: hsl(0, 0%, 35.82%);
+                color: hsla(0, 0%, 100%, 0.5);
+                &:hover{
+                    cursor: pointer;
+                    background-color: hsl(0, 0%, 50.82%);                    
+                }
+                @media screen and (max-width:540px){
+                    background-color: transparent;
+                } 
+                svg{
+                    font-size: 18px;
+                    margin-left: 0;
+                    @media screen and (max-width:540px){
+                        font-size: 6vw;
+                    } 
+                }
+            }
+            .microphone{
+                @media screen and (max-width:540px){
+                    display: none;
+                }                
+            }
+        }
+        .right_menu{
+            display: flex;
+            align-items: center;
+            .MuiSvgIcon-root{
+                margin-right: 20px;
+                font-size: 25px;
+                @media screen and (max-width:540px){
+                    display: none;
+                    margin-right: 20px;     
+                }
+            }
+            .avatar{
+                width: 2.3vw;
+                position: relative;
+                img{
+                    max-width: 100%;
+                    border-radius: 50%;
+                }
+                svg{
+                    display: block !important;
+                }
+                // &::after{
+                //     content: "";
+                //     position: absolute;
+                //     top: 98%;
+                //     right: -20px;
+                //     height: 25vw;
+                //     width: 18vw;
+                //     background-color: rgba(33, 33, 33, 0.98);
+                // }
+                @media screen and (max-width:540px){
+                    width: 7vw;     
+                }
+            }
+        }
+    }
+}
+.youtube_icon{
+    height:20px;
+}

@@ -1,0 +1,138 @@
+// style for homescreen component
+.homescreen_warapper{
+    width: 83%;
+    margin-top: 50px;
+    margin-left: 17%;
+    .homescreen{
+        background-color: #181818;
+        margin-top: 3.5vw;
+        .infinite-scroll-component{
+            height: auto;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+    @media screen and (max-width:540px){
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0%;     
+    }
+    .homescreen_menu{
+        display: inline-block;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        padding: 20px 10px 0px 10px;
+        background-color: #181818;
+        ul{
+            display: flex;
+            list-style: none;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            padding-left: 1vw;
+            margin-bottom: 20px;
+            &::-webkit-scrollbar{
+                display: none;
+                width: 0;
+            }
+            li{
+                border-radius: 17px;
+                padding: 4px 15px;
+                color: white;
+                margin: 0px 5px;
+                height: max-content;
+                white-space: nowrap;
+                width: auto;
+                background-color: rgba(255, 255, 255, 0.1);
+                border: 0.2px solid #b1bdb4;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .addclassinlist{
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+}
+// style for viddeo component
+.video{
+    display: inline-block;
+    width: calc((100% - 12%)/4);
+    max-width: 260px;
+    margin: 20px 0px;
+    .image_content{
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .video_duration{
+            position: absolute;
+            bottom: 3%;
+            right: 2%;
+            background-color: black;
+            color: white;
+            padding: 1px 4px;
+            border-radius: 3px;
+            font-size: 1vw;
+        }
+    }
+    .channelandcontent{
+        display: flex;
+        margin-top: 10px;
+        .channelicon{
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            .lazy-load-image-background,.blur,.lazy-load-image-loaded{
+                display: block !important;
+                width: 100%;
+            }
+            img{
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+        .channelcontent{
+            display: flex;
+            flex-direction: column;
+            p,h4,h3{
+                font-size: 14px;
+                margin: 1px 0px;
+                color: white;
+            }
+            h3{
+                font-size: 1.0vw;
+                line-height: 1.5;
+                margin-bottom: 5px;
+                font-weight: 600;
+                @media screen and (max-width:530px) {
+                    font-size: 2.8vw;
+                }
+            }
+            h4{
+                color: #aaa;
+                margin: 0.2vw 0vw;
+                font-weight: 400;
+                span{
+                    margin-right: 1vw;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1024px){
+        width: 30%;        
+    }
+    @media screen and (max-width:540px){
+        width: 90%;
+        max-width: 90%;       
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}

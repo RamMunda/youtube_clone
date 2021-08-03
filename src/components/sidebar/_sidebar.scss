@@ -1,0 +1,92 @@
+.sidebar{
+    display: inline-block;
+    position:fixed;
+    top:50px;
+    width: 17%;
+    height:calc(100vh - 50px);
+    background-color: rgba(33, 33, 33, 0.98);
+    .first_sidebar_menu{
+        display: inline-block;
+        width: 100%;
+        color:white;
+        .home{
+            display: flex;
+            align-items: center;
+            svg{
+                margin: 0vw 1.5vw;
+                font-size: 1.8vw;
+                color: #909090;
+                @media screen and (max-width:540px){
+                    margin: 1vw 1.5vw;
+                    font-size: 4.8vw;
+                    color: #909090;
+                }
+            }
+            p{
+                margin: 0.6vw 0vw;
+                font-size: 1.1vw;
+                font-weight: 600;
+                @media screen and (max-width:540px){
+                    font-size: 2.2vw;
+            
+                }
+            }
+            &:hover{
+                cursor:pointer;
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+            @media screen and (max-width:540px){
+                display: flex;
+                flex-direction: column;
+                align-items: center;            
+            }
+        }
+        .phonemodeDisablemenu{
+
+            @media screen and (max-width:540px){
+                display:none;
+            }
+        }
+        p{
+            width: 80%;
+            font-size: 1vw;
+            margin: 1vw auto;
+        }
+        .signinAvatar{
+            border: 1px solid #3ea6ff;
+            margin: 0 auto;
+            width: 50%;
+            svg{
+                margin: 0px 11px;
+                color: #3ea6ff;
+            }
+            p{
+                margin: 6px 0px;
+                color: #3ea6ff;
+            }
+        }
+        .horizontal_line{
+            height: 0.08px;
+            margin: 5px 0px;
+            background-color: gray;
+        }
+        @media screen and (max-width:540px){
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            color: white;
+        }
+
+
+
+    }
+    @media screen and (max-width:540px){
+        display: inline-block;
+        position: fixed;
+        top: 93%;
+        height: 13vw;
+        bottom: 0;
+        background-color: rgba(33, 33, 33, 0.98);
+        width: 100%;
+    }
+}

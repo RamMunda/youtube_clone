@@ -1,0 +1,90 @@
+.extravideo{
+    width: 30%;
+    margin-top: 1vw;
+    .Videoplayersidebar{
+        margin-top: 0.6vw;
+        .Watchscreenvideos{
+            padding: 0px 0px;
+            .tumbnail_image{
+                min-width: 10vw;
+                width: min-content;
+                .duration{
+                    right: 13%;
+                }
+            }
+            .videoDetail{
+                padding-left: 1vw;
+                h1{
+                    font-size: 1.0vw;
+                }
+                p{
+                    margin-bottom: 0.3vw;
+                }
+            }
+        }
+    }
+}
+.Watchscreenvideos{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #181818;
+
+    .tumbnail_image{
+        position: relative;
+        max-width: fit-content;
+        width: 30vw;
+        img{
+            max-width: 100%;
+        }
+        .duration{
+            position: absolute;
+            bottom: 2%;
+            right: 1% !important;
+            background-color: black;
+            color: white;
+            padding: 0.1vw 0.4vw;
+            font-size: 0.9vw;
+            border-radius: 3px;
+        }
+    }
+    .videoDetail{
+        padding-left: 1vw;
+        h1{
+            color: white;
+            font-size: 1.3vw;
+            line-height: 1.5;
+        }
+        p{
+            margin: 1vw;
+            font-size: 1vw;
+            color: #aaa;
+            span{
+                margin-right: 0.2vw;
+            }
+        }
+        .channeldetails{
+            .chaneliconAndname{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 2vw;
+                    height: 2vw;
+                    border-radius: 50%;
+                    margin-right: 0.7vw;
+                }
+                h2{
+                    width: 90%;
+                    font-size: 1vw;
+                    color: #aaa;
+                }
+            }
+            p{
+                line-clamp: 2;
+            }
+        }
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
